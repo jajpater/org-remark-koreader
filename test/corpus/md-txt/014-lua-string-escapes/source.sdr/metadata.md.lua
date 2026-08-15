@@ -1,4 +1,4 @@
--- /home/jajpater/Develop/mygithub/koreader-fixtures/corpus/.work/staged/014-lua-string-escapes/source.sdr/metadata.md.lua
+-- /mnt/onboard/md-txt/014-lua-string-escapes/source.sdr/metadata.md.lua
 return {
     ["annotations"] = {
         [1] = {
@@ -60,7 +60,7 @@ Second physical line has a tab:\9here, a carriage return:\13here, byte one:\1, a
     ["cre_dom_version"] = 20240114,
     ["css"] = "./data/epub.css",
     ["doc_pages"] = 1,
-    ["doc_path"] = "/home/jajpater/Develop/mygithub/koreader-fixtures/corpus/.work/staged/014-lua-string-escapes/source.md",
+    ["doc_path"] = "/mnt/onboard/md-txt/014-lua-string-escapes/source.md",
     ["doc_props"] = {
         ["title"] = "source",
     },

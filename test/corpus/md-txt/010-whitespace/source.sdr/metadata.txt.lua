@@ -1,4 +1,4 @@
--- /home/jajpater/Develop/mygithub/koreader-fixtures/corpus/.work/staged/010-whitespace/source.sdr/metadata.txt.lua
+-- /mnt/onboard/md-txt/010-whitespace/source.sdr/metadata.txt.lua
 return {
     ["annotations"] = {
         [1] = {
@@ -76,7 +76,7 @@ second code line",
     ["cre_dom_version"] = 20240114,
     ["css"] = "./data/fb2.css",
     ["doc_pages"] = 2,
-    ["doc_path"] = "/home/jajpater/Develop/mygithub/koreader-fixtures/corpus/.work/staged/010-whitespace/source.txt",
+    ["doc_path"] = "/mnt/onboard/md-txt/010-whitespace/source.txt",
     ["doc_props"] = {
         ["title"] = "source",
     },

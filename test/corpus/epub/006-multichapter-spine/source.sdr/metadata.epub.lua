@@ -1,4 +1,4 @@
--- /tmp/koreader-epub-nov.ZO7uTi/corpus/.work/staged/epub/006-multichapter-spine/source.sdr/metadata.epub.lua
+-- /mnt/onboard/epub/006-multichapter-spine/source.sdr/metadata.epub.lua
 return {
     ["annotations"] = {
         [1] = {
@@ -99,7 +99,7 @@ return {
     ["cre_dom_version"] = 20240114,
     ["css"] = "./data/epub.css",
     ["doc_pages"] = 8,
-    ["doc_path"] = "/tmp/koreader-epub-nov.ZO7uTi/corpus/.work/staged/epub/006-multichapter-spine/source.epub",
+    ["doc_path"] = "/mnt/onboard/epub/006-multichapter-spine/source.epub",
     ["doc_props"] = {
         ["identifiers"] = "urn:uuid:corpusgen-006-multichapter",
         ["language"] = "en",

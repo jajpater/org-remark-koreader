@@ -1,4 +1,4 @@
--- /tmp/koreader-epub-nov.ZO7uTi/corpus/.work/staged/epub/007-render-boundaries/source.sdr/metadata.epub.lua
+-- /mnt/onboard/epub/007-render-boundaries/source.sdr/metadata.epub.lua
 return {
     ["annotations"] = {
         [1] = {
@@ -118,7 +118,7 @@ print(beta)",
     ["cre_dom_version"] = 20240114,
     ["css"] = "./data/epub.css",
     ["doc_pages"] = 2,
-    ["doc_path"] = "/tmp/koreader-epub-nov.ZO7uTi/corpus/.work/staged/epub/007-render-boundaries/source.epub",
+    ["doc_path"] = "/mnt/onboard/epub/007-render-boundaries/source.epub",
     ["doc_props"] = {
         ["identifiers"] = "urn:uuid:corpusgen-007-render",
         ["language"] = "en",

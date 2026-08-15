@@ -1,4 +1,4 @@
--- /home/jajpater/Develop/mygithub/koreader-fixtures/corpus/.work/staged/002-multiple/source.sdr/metadata.md.lua
+-- /mnt/onboard/md-txt/002-multiple/source.sdr/metadata.md.lua
 return {
     ["annotations"] = {
         [1] = {
@@ -115,7 +115,7 @@ return {
     ["cre_dom_version"] = 20240114,
     ["css"] = "./data/epub.css",
     ["doc_pages"] = 3,
-    ["doc_path"] = "/home/jajpater/Develop/mygithub/koreader-fixtures/corpus/.work/staged/002-multiple/source.md",
+    ["doc_path"] = "/mnt/onboard/md-txt/002-multiple/source.md",
     ["doc_props"] = {
         ["title"] = "source",
     },

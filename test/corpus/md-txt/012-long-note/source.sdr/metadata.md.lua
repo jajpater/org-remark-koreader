@@ -1,4 +1,4 @@
--- /home/jajpater/Develop/mygithub/koreader-fixtures/corpus/.work/staged/012-long-note/source.sdr/metadata.md.lua
+-- /mnt/onboard/md-txt/012-long-note/source.sdr/metadata.md.lua
 return {
     ["annotations"] = {
         [1] = {
@@ -52,7 +52,7 @@ Third paragraph looks like **Markdown**, `code`, [a link](https://example.com), 
     ["cre_dom_version"] = 20240114,
     ["css"] = "./data/epub.css",
     ["doc_pages"] = 1,
-    ["doc_path"] = "/home/jajpater/Develop/mygithub/koreader-fixtures/corpus/.work/staged/012-long-note/source.md",
+    ["doc_path"] = "/mnt/onboard/md-txt/012-long-note/source.md",
     ["doc_props"] = {
         ["title"] = "source",
     },

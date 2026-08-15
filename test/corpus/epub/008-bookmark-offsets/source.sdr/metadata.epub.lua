@@ -1,4 +1,4 @@
--- /tmp/koreader-bookmark-fixtures.QOLwdX/corpus/.work/staged/epub/008-bookmark-offsets/source.sdr/metadata.epub.lua
+-- /mnt/onboard/epub/008-bookmark-offsets/source.sdr/metadata.epub.lua
 return {
     ["annotations"] = {
         [1] = {
@@ -56,7 +56,7 @@ return {
     ["cre_dom_version"] = 20240114,
     ["css"] = "./data/epub.css",
     ["doc_pages"] = 19,
-    ["doc_path"] = "/tmp/koreader-bookmark-fixtures.QOLwdX/corpus/.work/staged/epub/008-bookmark-offsets/source.epub",
+    ["doc_path"] = "/mnt/onboard/epub/008-bookmark-offsets/source.epub",
     ["doc_props"] = {
         ["identifiers"] = "urn:uuid:corpusgen-008-bookmark-offsets",
         ["language"] = "en",

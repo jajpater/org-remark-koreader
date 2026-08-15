@@ -1,4 +1,4 @@
--- /home/jajpater/Develop/mygithub/koreader-fixtures/corpus/.work/staged/epub/004-colors/source.sdr/metadata.epub.lua
+-- /mnt/onboard/epub/004-colors/source.sdr/metadata.epub.lua
 return {
     ["annotations"] = {
         [1] = {
@@ -134,7 +134,7 @@ return {
     ["cre_dom_version"] = 20240114,
     ["css"] = "./data/epub.css",
     ["doc_pages"] = 1,
-    ["doc_path"] = "/home/jajpater/Develop/mygithub/koreader-fixtures/corpus/.work/staged/epub/004-colors/source.epub",
+    ["doc_path"] = "/mnt/onboard/epub/004-colors/source.epub",
     ["doc_props"] = {
         ["identifiers"] = "urn:uuid:f55ef79a-c041-4a70-a94e-e0b000000002",
         ["language"] = "en",
