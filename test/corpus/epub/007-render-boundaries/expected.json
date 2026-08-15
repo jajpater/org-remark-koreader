@@ -1,0 +1,107 @@
+{
+  "fixture": "007-render-boundaries",
+  "format": "epub",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 547,
+        "start_byte": 493,
+        "text": "静かな灯台の窓に青い光がともりました"
+      },
+      "text": "静かな灯台の窓に青い光がともりました"
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 1186,
+        "start_byte": 1130,
+        "text": "The highlight after the image has a stable source oracle"
+      },
+      "text": "The highlight after the image has a stable source oracle"
+    },
+    {
+      "color": "gray",
+      "id": 3,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 1236,
+        "start_byte": 1197,
+        "text": "alpha = 1\n\tbeta = alpha + 2\nprint(beta)"
+      },
+      "stored_text": "alpha = 1\nbeta = alpha + 2\nprint(beta)",
+      "text": "alpha = 1\n       beta = alpha + 2\nprint(beta)"
+    },
+    {
+      "color": "blue",
+      "id": 4,
+      "kind": "annotation",
+      "note": "Table cell note.",
+      "occurrence": 1,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 1355,
+        "start_byte": 1331,
+        "text": "forty two measured tides"
+      },
+      "text": "forty two measured tides"
+    },
+    {
+      "color": "purple",
+      "id": 5,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 1506,
+        "start_byte": 1465,
+        "text": "مصباح هادئ عند الميناء"
+      },
+      "text": "مصباح هادئ عند الميناء"
+    },
+    {
+      "color": "olive",
+      "id": 6,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 887,
+        "start_byte": 783,
+        "text": "Quote crossing begins with a copper bell</p></blockquote>\n<p>Paragraph crossing ends beside a quiet pier"
+      },
+      "text": "Quote crossing begins with a copper bell\nParagraph crossing ends beside a quiet pier"
+    },
+    {
+      "color": "cyan",
+      "id": 7,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 994,
+        "start_byte": 901,
+        "text": "First list crossing begins with amber rope</li><li>Second list crossing ends with a blue knot"
+      },
+      "text": "First list crossing begins with amber rope\nSecond list crossing ends with a blue knot"
+    }
+  ],
+  "schema": 1
+}

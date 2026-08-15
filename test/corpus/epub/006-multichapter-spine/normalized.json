@@ -1,0 +1,152 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 1,
+    "highlight": 4
+  },
+  "fixture": "006-multichapter-spine",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment[3]/body/p[1]/text().0",
+      "pos1": "/body/DocFragment[3]/body/p[1]/text().46",
+      "rendered_text": "The copper compass belongs only to chapter one",
+      "same_text_node": true,
+      "source_document": "chapter1.xhtml",
+      "source_range": {
+        "document": "chapter1.xhtml",
+        "end_byte": 223,
+        "start_byte": 177,
+        "text": "The copper compass belongs only to chapter one"
+      },
+      "text": "The copper compass belongs only to chapter one"
+    },
+    {
+      "anchor": null,
+      "color": "purple",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "annotation",
+      "match_strategy": "whole",
+      "note": "Chapter three note.",
+      "occurrence": 1,
+      "pos0": "/body/DocFragment[5]/body/p[1]/text().0",
+      "pos1": "/body/DocFragment[5]/body/p[1]/text().55",
+      "rendered_text": "The middle chapter carries a precise violet observation",
+      "same_text_node": true,
+      "source_document": "chapter3.xhtml",
+      "source_range": {
+        "document": "chapter3.xhtml",
+        "end_byte": 236,
+        "start_byte": 181,
+        "text": "The middle chapter carries a precise violet observation"
+      },
+      "text": "The middle chapter carries a precise violet observation"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 3,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment[7]/body/p[1]/text().0",
+      "pos1": "/body/DocFragment[7]/body/p[1]/text().49",
+      "rendered_text": "The final chapter owns the distant silver sextant",
+      "same_text_node": true,
+      "source_document": "chapter5.xhtml",
+      "source_range": {
+        "document": "chapter5.xhtml",
+        "end_byte": 228,
+        "start_byte": 179,
+        "text": "The final chapter owns the distant silver sextant"
+      },
+      "text": "The final chapter owns the distant silver sextant"
+    },
+    {
+      "anchor": "The late bookmark anchors beyond an explicit page break",
+      "anchor_page": 8,
+      "bookmark_page": "/body/DocFragment[7]/body/p[3]/text().0",
+      "color": null,
+      "exact_match_count": 1,
+      "has_page": true,
+      "id": 4,
+      "kind": "bookmark",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment[7]/body/p[3]/text().0",
+      "pos1": "/body/DocFragment[7]/body/p[3]/text().55",
+      "rendered_text": null,
+      "same_text_node": true,
+      "source_document": "chapter5.xhtml",
+      "source_range": {
+        "document": "chapter5.xhtml",
+        "end_byte": 402,
+        "start_byte": 347,
+        "text": "The late bookmark anchors beyond an explicit page break"
+      },
+      "text": null
+    },
+    {
+      "anchor": null,
+      "color": "orange",
+      "exact_match_count": 2,
+      "has_page": null,
+      "id": 5,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment[3]/body/p[2]/text().0",
+      "pos1": "/body/DocFragment[3]/body/p[2]/text().67",
+      "rendered_text": "The repeated lantern sentence is identical in both distant chapters",
+      "same_text_node": true,
+      "source_document": "chapter1.xhtml",
+      "source_range": {
+        "document": "chapter1.xhtml",
+        "end_byte": 299,
+        "start_byte": 232,
+        "text": "The repeated lantern sentence is identical in both distant chapters"
+      },
+      "text": "The repeated lantern sentence is identical in both distant chapters"
+    },
+    {
+      "anchor": null,
+      "color": "blue",
+      "exact_match_count": 2,
+      "has_page": null,
+      "id": 6,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 2,
+      "pos0": "/body/DocFragment[7]/body/p[2]/text().0",
+      "pos1": "/body/DocFragment[7]/body/p[2]/text().67",
+      "rendered_text": "The repeated lantern sentence is identical in both distant chapters",
+      "same_text_node": true,
+      "source_document": "chapter5.xhtml",
+      "source_range": {
+        "document": "chapter5.xhtml",
+        "end_byte": 304,
+        "start_byte": 237,
+        "text": "The repeated lantern sentence is identical in both distant chapters"
+      },
+      "text": "The repeated lantern sentence is identical in both distant chapters"
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

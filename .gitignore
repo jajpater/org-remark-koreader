@@ -1,0 +1,5 @@
+*.elc
+marginalia.org
+*-notes.org
+__pycache__/
+*.pyc

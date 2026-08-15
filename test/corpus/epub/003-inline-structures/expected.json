@@ -1,0 +1,36 @@
+{
+  "fixture": "003-inline-structures",
+  "format": "epub",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "This range includes emphasized EPUB words and plain text"
+    },
+    {
+      "color": "olive",
+      "id": 2,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "This range surrounds an EPUB link and continues"
+    },
+    {
+      "color": "gray",
+      "id": 3,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "This range crosses inline EPUB code and finishes"
+    },
+    {
+      "color": "green",
+      "id": 4,
+      "kind": "annotation",
+      "note": "EPUB blockquote note.",
+      "occurrence": 1,
+      "text": "A blockquote annotation target stays exact"
+    }
+  ],
+  "schema": 1
+}

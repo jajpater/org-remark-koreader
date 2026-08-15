@@ -1,0 +1,96 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 2,
+    "highlight": 3
+  },
+  "fixture": "011-boundaries",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "Firstword begins the document body",
+      "same_text_node": true,
+      "text": "Firstword begins the document body"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "Ωboundary",
+      "same_text_node": true,
+      "text": "Ωboundary"
+    },
+    {
+      "anchor": null,
+      "color": "purple",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 3,
+      "kind": "annotation",
+      "match_strategy": "whole",
+      "note": "Selection reaches the paragraph end.",
+      "occurrence": 1,
+      "rendered_text": "unique paragraph ending",
+      "same_text_node": true,
+      "text": "unique paragraph ending"
+    },
+    {
+      "anchor": "Early boundary bookmark block.",
+      "color": null,
+      "exact_match_count": 1,
+      "has_page": true,
+      "id": 4,
+      "kind": "bookmark",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": null,
+      "same_text_node": true,
+      "text": null
+    },
+    {
+      "anchor": null,
+      "color": "orange",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 5,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "absolute final text",
+      "same_text_node": true,
+      "text": "absolute final text"
+    },
+    {
+      "anchor": "Last boundary bookmark contains the absolute final text.",
+      "color": null,
+      "exact_match_count": 1,
+      "has_page": true,
+      "id": 6,
+      "kind": "bookmark",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": null,
+      "same_text_node": true,
+      "text": null
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

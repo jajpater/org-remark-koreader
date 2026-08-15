@@ -1,0 +1,35 @@
+{
+  "fixture": "005-boundaries-long-note",
+  "format": "epub",
+  "operations": [
+    {
+      "color": "red",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "Absolute EPUB beginning target"
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "annotation",
+      "note": "First EPUB note paragraph.\n\nSecond paragraph keeps punctuation: [sic], v. 38, and vergaan?\nUnicode remains exact: café, Ελληνικά, 日本語, 😀.",
+      "occurrence": 1,
+      "text": "A long EPUB note target sits in the middle"
+    },
+    {
+      "anchor": "Boundary bookmark anchor starts the final page.",
+      "id": 3,
+      "kind": "bookmark",
+      "occurrence": 1
+    },
+    {
+      "color": "blue",
+      "id": 4,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "The absolute final EPUB text is highlighted"
+    }
+  ],
+  "schema": 1
+}

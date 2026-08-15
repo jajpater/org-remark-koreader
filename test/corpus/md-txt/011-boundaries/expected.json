@@ -1,0 +1,78 @@
+{
+  "fixture": "011-boundaries",
+  "format": "md",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 54,
+        "start_byte": 20,
+        "text": "Firstword begins the document body"
+      },
+      "text": "Firstword begins the document body"
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 90,
+        "start_byte": 80,
+        "text": "Ωboundary"
+      },
+      "text": "Ωboundary"
+    },
+    {
+      "color": "purple",
+      "id": 3,
+      "kind": "annotation",
+      "note": "Selection reaches the paragraph end.",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 182,
+        "start_byte": 159,
+        "text": "unique paragraph ending"
+      },
+      "text": "unique paragraph ending"
+    },
+    {
+      "anchor": "Early boundary bookmark block.",
+      "id": 4,
+      "kind": "bookmark",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 214,
+        "start_byte": 184,
+        "text": "Early boundary bookmark block."
+      }
+    },
+    {
+      "color": "orange",
+      "id": 5,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 1975,
+        "start_byte": 1956,
+        "text": "absolute final text"
+      },
+      "text": "absolute final text"
+    },
+    {
+      "anchor": "Last boundary bookmark contains the absolute final text.",
+      "id": 6,
+      "kind": "bookmark",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 1976,
+        "start_byte": 1920,
+        "text": "Last boundary bookmark contains the absolute final text."
+      }
+    }
+  ],
+  "schema": 1
+}

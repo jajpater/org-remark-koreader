@@ -1,0 +1,54 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 0,
+    "highlight": 2
+  },
+  "fixture": "006-markdown-emphasis",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "bold words",
+      "same_text_node": true,
+      "text": "bold words"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "highlight",
+      "match_strategy": "composed",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "contains italic words",
+      "same_text_node": false,
+      "text": "contains italic words"
+    },
+    {
+      "anchor": null,
+      "color": "purple",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 3,
+      "kind": "annotation",
+      "match_strategy": "composed",
+      "note": "Range spans the complete formatted phrase.",
+      "occurrence": 1,
+      "rendered_text": "This contains bold words in a sentence",
+      "same_text_node": false,
+      "text": "This contains bold words in a sentence"
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

@@ -1,0 +1,110 @@
+{
+  "counts": {
+    "annotation": 2,
+    "bookmark": 1,
+    "highlight": 4
+  },
+  "fixture": "003-unicode",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "café and naïve",
+      "same_text_node": true,
+      "text": "café and naïve"
+    },
+    {
+      "anchor": null,
+      "color": "orange",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "Straße",
+      "same_text_node": true,
+      "text": "Straße"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 3,
+      "kind": "annotation",
+      "match_strategy": "whole",
+      "note": "Notitie met café, 🧠 en 日本語.",
+      "occurrence": 1,
+      "rendered_text": "“smart quotes”",
+      "same_text_node": true,
+      "text": "“smart quotes”"
+    },
+    {
+      "anchor": null,
+      "color": "purple",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 4,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "emoji 🧠",
+      "same_text_node": true,
+      "text": "emoji 🧠"
+    },
+    {
+      "anchor": null,
+      "color": "cyan",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 5,
+      "kind": "annotation",
+      "match_strategy": "whole",
+      "note": "العربية blijft ook bewaard.",
+      "occurrence": 1,
+      "rendered_text": "日本語",
+      "same_text_node": true,
+      "text": "日本語"
+    },
+    {
+      "anchor": null,
+      "color": "blue",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 6,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "العربية",
+      "same_text_node": true,
+      "text": "العربية"
+    },
+    {
+      "anchor": "Unicode bookmark anchor Ω is here.",
+      "color": null,
+      "exact_match_count": 1,
+      "has_page": true,
+      "id": 7,
+      "kind": "bookmark",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": null,
+      "same_text_node": true,
+      "text": null
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

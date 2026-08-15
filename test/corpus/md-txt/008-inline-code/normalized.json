@@ -1,0 +1,40 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 0,
+    "highlight": 1
+  },
+  "fixture": "008-inline-code",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "resolve_text_range",
+      "same_text_node": true,
+      "text": "resolve_text_range"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "annotation",
+      "match_strategy": "composed",
+      "note": "Selection crosses inline-code boundaries.",
+      "occurrence": 1,
+      "rendered_text": "function resolve_text_range should work",
+      "same_text_node": false,
+      "text": "function resolve_text_range should work"
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

@@ -1,0 +1,126 @@
+{
+  "corpus": "corpus/generated/epub",
+  "family": "epub",
+  "fixtures": {
+    "discovered": 8,
+    "failed": 0,
+    "passed": 8
+  },
+  "koreader": {
+    "build_artifact": "koreader-v2026.07-x86_64.AppImage",
+    "build_sha256": "757d7f15d4fb2b0c73fc0ab74bbf33f38710a3e3a1d4e3f2da1ea90a948fa3a0",
+    "build_size": 40333624,
+    "git_commit": "1e2fa5f1239028ab4b37acae833cdc86a71e5258",
+    "koreader_version": "v2026.07",
+    "lua_runtime": "LuaJIT 2.1.1783773675",
+    "profile_version": 1,
+    "schema": 1
+  },
+  "operations": {
+    "annotation": 6,
+    "bookmark": 7,
+    "highlight": 28,
+    "requested": 41
+  },
+  "results": [
+    {
+      "counts": {
+        "annotation": 1,
+        "bookmark": 1,
+        "highlight": 1
+      },
+      "fixture": "001-basic",
+      "format": "epub",
+      "persisted_metadata": "001-basic/source.sdr/metadata.epub.lua",
+      "requested_operations": 3,
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "annotation": 1,
+        "bookmark": 1,
+        "highlight": 3
+      },
+      "fixture": "002-unicode-duplicates",
+      "format": "epub",
+      "persisted_metadata": "002-unicode-duplicates/source.sdr/metadata.epub.lua",
+      "requested_operations": 5,
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "annotation": 1,
+        "bookmark": 0,
+        "highlight": 3
+      },
+      "fixture": "003-inline-structures",
+      "format": "epub",
+      "persisted_metadata": "003-inline-structures/source.sdr/metadata.epub.lua",
+      "requested_operations": 4,
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "annotation": 0,
+        "bookmark": 0,
+        "highlight": 9
+      },
+      "fixture": "004-colors",
+      "format": "epub",
+      "persisted_metadata": "004-colors/source.sdr/metadata.epub.lua",
+      "requested_operations": 9,
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "annotation": 1,
+        "bookmark": 1,
+        "highlight": 2
+      },
+      "fixture": "005-boundaries-long-note",
+      "format": "epub",
+      "persisted_metadata": "005-boundaries-long-note/source.sdr/metadata.epub.lua",
+      "requested_operations": 4,
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "annotation": 1,
+        "bookmark": 1,
+        "highlight": 4
+      },
+      "fixture": "006-multichapter-spine",
+      "format": "epub",
+      "persisted_metadata": "006-multichapter-spine/source.sdr/metadata.epub.lua",
+      "requested_operations": 6,
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "annotation": 1,
+        "bookmark": 0,
+        "highlight": 6
+      },
+      "fixture": "007-render-boundaries",
+      "format": "epub",
+      "persisted_metadata": "007-render-boundaries/source.sdr/metadata.epub.lua",
+      "requested_operations": 7,
+      "status": "pass"
+    },
+    {
+      "counts": {
+        "annotation": 0,
+        "bookmark": 3,
+        "highlight": 0
+      },
+      "fixture": "008-bookmark-offsets",
+      "format": "epub",
+      "persisted_metadata": "008-bookmark-offsets/source.sdr/metadata.epub.lua",
+      "requested_operations": 3,
+      "status": "pass"
+    }
+  ],
+  "schema": 1,
+  "status": "pass",
+  "ui_smoke": "not-run"
+}

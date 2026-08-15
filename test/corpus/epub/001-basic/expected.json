@@ -1,0 +1,31 @@
+{
+  "fixture": "001-basic",
+  "format": "epub",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "unique EPUB highlighted phrase"
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "annotation",
+      "note": "EPUB cross-node note survives reload.",
+      "occurrence": 1,
+      "text": "EPUB passage crosses bold words and continues"
+    },
+    {
+      "anchor": "The basic EPUB bookmark anchor is on its own page.",
+      "id": 3,
+      "kind": "bookmark",
+      "occurrence": 1
+    }
+  ],
+  "schema": 1,
+  "sidecar_contains": [
+    "/body/DocFragment/body/"
+  ]
+}

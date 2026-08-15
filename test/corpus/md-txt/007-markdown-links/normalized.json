@@ -1,0 +1,40 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 0,
+    "highlight": 1
+  },
+  "fixture": "007-markdown-links",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "the linked passage",
+      "same_text_node": true,
+      "text": "the linked passage"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "annotation",
+      "match_strategy": "composed",
+      "note": "Selection crosses both link boundaries.",
+      "occurrence": 1,
+      "rendered_text": "Read the linked passage carefully",
+      "same_text_node": false,
+      "text": "Read the linked passage carefully"
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

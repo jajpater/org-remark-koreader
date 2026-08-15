@@ -1,0 +1,57 @@
+{
+  "fixture": "003-unicode",
+  "format": "md",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "café and naïve"
+    },
+    {
+      "color": "orange",
+      "id": 2,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "Straße"
+    },
+    {
+      "color": "green",
+      "id": 3,
+      "kind": "annotation",
+      "note": "Notitie met café, 🧠 en 日本語.",
+      "occurrence": 1,
+      "text": "“smart quotes”"
+    },
+    {
+      "color": "purple",
+      "id": 4,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "emoji 🧠"
+    },
+    {
+      "color": "cyan",
+      "id": 5,
+      "kind": "annotation",
+      "note": "العربية blijft ook bewaard.",
+      "occurrence": 1,
+      "text": "日本語"
+    },
+    {
+      "color": "blue",
+      "id": 6,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "العربية"
+    },
+    {
+      "anchor": "Unicode bookmark anchor Ω is here.",
+      "id": 7,
+      "kind": "bookmark",
+      "occurrence": 1
+    }
+  ],
+  "schema": 1
+}

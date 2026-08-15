@@ -1,0 +1,44 @@
+{
+  "fixture": "006-markdown-emphasis",
+  "format": "md",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 47,
+        "start_byte": 37,
+        "text": "bold words"
+      },
+      "text": "bold words"
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 93,
+        "start_byte": 71,
+        "text": "contains *italic words"
+      },
+      "text": "contains italic words"
+    },
+    {
+      "color": "purple",
+      "id": 3,
+      "kind": "annotation",
+      "note": "Range spans the complete formatted phrase.",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 63,
+        "start_byte": 21,
+        "text": "This contains **bold words** in a sentence"
+      },
+      "text": "This contains bold words in a sentence"
+    }
+  ],
+  "schema": 1
+}

@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 0,
+    "highlight": 0
+  },
+  "fixture": "012-long-note",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "annotation",
+      "match_strategy": "whole",
+      "note": "First paragraph: punctuation, commas, semicolons; and a question?\n\nSecond paragraph contains café, 日本語, العربية, and emoji 🧠.\n\nThird paragraph looks like **Markdown**, `code`, [a link](https://example.com), and # a heading—but remains plain KOReader note content.",
+      "occurrence": 1,
+      "rendered_text": "passage receiving the long note",
+      "same_text_node": true,
+      "text": "passage receiving the long note"
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

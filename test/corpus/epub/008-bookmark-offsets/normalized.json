@@ -1,0 +1,93 @@
+{
+  "counts": {
+    "annotation": 0,
+    "bookmark": 3,
+    "highlight": 0
+  },
+  "fixture": "008-bookmark-offsets",
+  "operations": [
+    {
+      "anchor": "The internal page bookmark anchor appears deep inside the uninterrupted paragraph",
+      "anchor_page": 7,
+      "bookmark_page": "/body/DocFragment/body/p[1]/text().2670",
+      "color": null,
+      "exact_match_count": 1,
+      "expected_page_offset_min": 1,
+      "expected_page_path": "/body/DocFragment/body/p[1]/text()",
+      "has_page": true,
+      "id": 1,
+      "kind": "bookmark",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/p[1]/text().2845",
+      "pos1": "/body/DocFragment/body/p[1]/text().2926",
+      "rendered_text": null,
+      "same_text_node": true,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 3214,
+        "start_byte": 3133,
+        "text": "The internal page bookmark anchor appears deep inside the uninterrupted paragraph"
+      },
+      "text": null
+    },
+    {
+      "anchor": "The post-inline bookmark anchor belongs to the second direct text node",
+      "anchor_page": 17,
+      "bookmark_page": "/body/DocFragment/body/p[2]/text()[2].2314",
+      "color": null,
+      "exact_match_count": 1,
+      "expected_page_offset_min": 1,
+      "expected_page_path": "/body/DocFragment/body/p[2]/text()[2]",
+      "has_page": true,
+      "id": 2,
+      "kind": "bookmark",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/p[2]/text()[2].2350",
+      "pos1": "/body/DocFragment/body/p[2]/text()[2].2420",
+      "rendered_text": null,
+      "same_text_node": false,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 7199,
+        "start_byte": 7129,
+        "text": "The post-inline bookmark anchor belongs to the second direct text node"
+      },
+      "text": null
+    },
+    {
+      "anchor": "The duplicated bookmark paragraph is deliberately identical in both places",
+      "anchor_page": 19,
+      "bookmark_page": "/body/DocFragment/body/p[4]/text().0",
+      "color": null,
+      "exact_match_count": 2,
+      "expected_page_offset": 0,
+      "expected_page_path": "/body/DocFragment/body/p[4]/text()",
+      "has_page": true,
+      "id": 3,
+      "kind": "bookmark",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 2,
+      "pos0": "/body/DocFragment/body/p[4]/text().0",
+      "pos1": "/body/DocFragment/body/p[4]/text().74",
+      "rendered_text": null,
+      "same_text_node": true,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 7514,
+        "start_byte": 7440,
+        "text": "The duplicated bookmark paragraph is deliberately identical in both places"
+      },
+      "text": null
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

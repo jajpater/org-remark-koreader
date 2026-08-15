@@ -1,0 +1,68 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 1,
+    "highlight": 2
+  },
+  "fixture": "009-blockquote-list",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "quoted passage",
+      "same_text_node": true,
+      "text": "quoted passage"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "annotation",
+      "match_strategy": "whole",
+      "note": "Crosses quoted source lines.",
+      "occurrence": 1,
+      "rendered_text": "A quoted passage appears here. It continues on a second quoted line.",
+      "same_text_node": true,
+      "text": "A quoted passage appears here. It continues on a second quoted line."
+    },
+    {
+      "anchor": null,
+      "color": "purple",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 3,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "second important item",
+      "same_text_node": true,
+      "text": "second important item"
+    },
+    {
+      "anchor": "third item",
+      "color": null,
+      "exact_match_count": 1,
+      "has_page": true,
+      "id": 4,
+      "kind": "bookmark",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": null,
+      "same_text_node": true,
+      "text": null
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

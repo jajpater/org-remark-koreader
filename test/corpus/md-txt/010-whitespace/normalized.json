@@ -1,0 +1,68 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 1,
+    "highlight": 2
+  },
+  "fixture": "010-whitespace",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "Multiple   spaces stay visible.",
+      "same_text_node": true,
+      "text": "Multiple spaces stay visible."
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "annotation",
+      "match_strategy": "composed",
+      "note": "Indented-code whitespace case.",
+      "occurrence": 1,
+      "rendered_text": "four space code\n    second code line",
+      "same_text_node": false,
+      "text": "four space code\nsecond code line"
+    },
+    {
+      "anchor": null,
+      "color": "purple",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 3,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "non-breaking space",
+      "same_text_node": true,
+      "text": "non-breaking space"
+    },
+    {
+      "anchor": "Final whitespace bookmark anchor.",
+      "color": null,
+      "exact_match_count": 1,
+      "has_page": true,
+      "id": 4,
+      "kind": "bookmark",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": null,
+      "same_text_node": true,
+      "text": null
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

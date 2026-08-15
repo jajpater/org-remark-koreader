@@ -1,0 +1,40 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 0,
+    "highlight": 1
+  },
+  "fixture": "014-lua-string-escapes",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "\"quoted\" text with a \\ path",
+      "same_text_node": true,
+      "text": "\"quoted\" text with a \\ path"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "annotation",
+      "match_strategy": "whole",
+      "note": "First physical line with \"quotes\" and a \\ path.\nSecond physical line has a tab:\there, a carriage return:\rhere, byte one:\u0001, and 日本語.",
+      "occurrence": 1,
+      "rendered_text": "Unicode café 🧠 with serializer controls",
+      "same_text_node": true,
+      "text": "Unicode café 🧠 with serializer controls"
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

@@ -1,0 +1,32 @@
+{
+  "fixture": "007-markdown-links",
+  "format": "md",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 42,
+        "start_byte": 24,
+        "text": "the linked passage"
+      },
+      "text": "the linked passage"
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "annotation",
+      "note": "Selection crosses both link boundaries.",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 74,
+        "start_byte": 18,
+        "text": "Read [the linked passage](https://example.com) carefully"
+      },
+      "text": "Read the linked passage carefully"
+    }
+  ],
+  "schema": 1
+}

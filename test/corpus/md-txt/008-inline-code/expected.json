@@ -1,0 +1,32 @@
+{
+  "fixture": "008-inline-code",
+  "format": "md",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 47,
+        "start_byte": 29,
+        "text": "resolve_text_range"
+      },
+      "text": "resolve_text_range"
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "annotation",
+      "note": "Selection crosses inline-code boundaries.",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 60,
+        "start_byte": 19,
+        "text": "function `resolve_text_range` should work"
+      },
+      "text": "function resolve_text_range should work"
+    }
+  ],
+  "schema": 1
+}

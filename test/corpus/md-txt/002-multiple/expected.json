@@ -1,0 +1,62 @@
+{
+  "fixture": "002-multiple",
+  "format": "md",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "first ordered highlight"
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "annotation",
+      "note": "First generated note.",
+      "occurrence": 1,
+      "text": "first ordered annotation"
+    },
+    {
+      "anchor": "First bookmark anchor is here.",
+      "id": 3,
+      "kind": "bookmark",
+      "occurrence": 1
+    },
+    {
+      "color": "orange",
+      "id": 4,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "second ordered highlight"
+    },
+    {
+      "color": "blue",
+      "id": 5,
+      "kind": "annotation",
+      "note": "Second generated note.",
+      "occurrence": 1,
+      "text": "second ordered annotation"
+    },
+    {
+      "anchor": "Second bookmark anchor is here.",
+      "id": 6,
+      "kind": "bookmark",
+      "occurrence": 1
+    },
+    {
+      "color": "purple",
+      "id": 7,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "third ordered highlight"
+    },
+    {
+      "anchor": "Third bookmark anchor is here.",
+      "id": 8,
+      "kind": "bookmark",
+      "occurrence": 1
+    }
+  ],
+  "schema": 1
+}

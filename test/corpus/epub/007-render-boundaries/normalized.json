@@ -1,0 +1,173 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 0,
+    "highlight": 6
+  },
+  "fixture": "007-render-boundaries",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/p[1]/text().98",
+      "pos1": "/body/DocFragment/body/p[1]/text().116",
+      "rendered_text": "静かな灯台の窓に青い光がともりました",
+      "same_text_node": true,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 547,
+        "start_byte": 493,
+        "text": "静かな灯台の窓に青い光がともりました"
+      },
+      "text": "静かな灯台の窓に青い光がともりました"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/p[5]/text().0",
+      "pos1": "/body/DocFragment/body/p[5]/text().56",
+      "rendered_text": "The highlight after the image has a stable source oracle",
+      "same_text_node": true,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 1186,
+        "start_byte": 1130,
+        "text": "The highlight after the image has a stable source oracle"
+      },
+      "text": "The highlight after the image has a stable source oracle"
+    },
+    {
+      "anchor": null,
+      "color": "gray",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 3,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/pre/text().0",
+      "pos1": "/body/DocFragment/body/pre/text().45",
+      "rendered_text": "alpha = 1\n       beta = alpha + 2\nprint(beta)",
+      "same_text_node": true,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 1236,
+        "start_byte": 1197,
+        "text": "alpha = 1\n\tbeta = alpha + 2\nprint(beta)"
+      },
+      "text": "alpha = 1\nbeta = alpha + 2\nprint(beta)"
+    },
+    {
+      "anchor": null,
+      "color": "blue",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 4,
+      "kind": "annotation",
+      "match_strategy": "whole",
+      "note": "Table cell note.",
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/table/tbody/tr/td[2]/text().0",
+      "pos1": "/body/DocFragment/body/table/tbody/tr/td[2]/text().24",
+      "rendered_text": "forty two measured tides",
+      "same_text_node": true,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 1355,
+        "start_byte": 1331,
+        "text": "forty two measured tides"
+      },
+      "text": "forty two measured tides"
+    },
+    {
+      "anchor": null,
+      "color": "purple",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 5,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/p[6]/text().33",
+      "pos1": "/body/DocFragment/body/p[6]/text().55",
+      "rendered_text": "مصباح هادئ عند الميناء",
+      "same_text_node": true,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 1506,
+        "start_byte": 1465,
+        "text": "مصباح هادئ عند الميناء"
+      },
+      "text": "مصباح هادئ عند الميناء"
+    },
+    {
+      "anchor": null,
+      "color": "olive",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 6,
+      "kind": "highlight",
+      "match_strategy": "composed",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/blockquote/p/text().0",
+      "pos1": "/body/DocFragment/body/p[2]/text().43",
+      "rendered_text": "Quote crossing begins with a copper bell\nParagraph crossing ends beside a quiet pier",
+      "same_text_node": false,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 887,
+        "start_byte": 783,
+        "text": "Quote crossing begins with a copper bell</p></blockquote>\n<p>Paragraph crossing ends beside a quiet pier"
+      },
+      "text": "Quote crossing begins with a copper bell\nParagraph crossing ends beside a quiet pier"
+    },
+    {
+      "anchor": null,
+      "color": "cyan",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 7,
+      "kind": "highlight",
+      "match_strategy": "composed",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/ol/li[1]/text().0",
+      "pos1": "/body/DocFragment/body/ol/li[2]/text().42",
+      "rendered_text": "First list crossing begins with amber rope\nSecond list crossing ends with a blue knot",
+      "same_text_node": false,
+      "source_document": "chapter.xhtml",
+      "source_range": {
+        "document": "chapter.xhtml",
+        "end_byte": 994,
+        "start_byte": 901,
+        "text": "First list crossing begins with amber rope</li><li>Second list crossing ends with a blue knot"
+      },
+      "text": "First list crossing begins with amber rope\nSecond list crossing ends with a blue knot"
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

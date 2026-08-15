@@ -1,0 +1,31 @@
+{
+  "fixture": "005-duplicates",
+  "format": "md",
+  "operations": [
+    {
+      "color": "yellow",
+      "expected_matches": 3,
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "Repeated sentence for deterministic occurrence."
+    },
+    {
+      "color": "green",
+      "expected_matches": 3,
+      "id": 2,
+      "kind": "highlight",
+      "occurrence": 2,
+      "text": "Repeated sentence for deterministic occurrence."
+    },
+    {
+      "color": "purple",
+      "expected_matches": 3,
+      "id": 3,
+      "kind": "highlight",
+      "occurrence": 3,
+      "text": "Repeated sentence for deterministic occurrence."
+    }
+  ],
+  "schema": 1
+}

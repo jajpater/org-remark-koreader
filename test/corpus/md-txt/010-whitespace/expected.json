@@ -1,0 +1,57 @@
+{
+  "fixture": "010-whitespace",
+  "format": "txt",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 53,
+        "start_byte": 22,
+        "text": "Multiple   spaces stay visible."
+      },
+      "stored_text": "Multiple spaces stay visible.",
+      "text": "Multiple   spaces stay visible."
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "annotation",
+      "note": "Indented-code whitespace case.",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 132,
+        "start_byte": 95,
+        "text": "four space code\r\n    second code line"
+      },
+      "stored_text": "four space code\nsecond code line",
+      "text": "four space code\n    second code line"
+    },
+    {
+      "color": "purple",
+      "id": 3,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 221,
+        "start_byte": 202,
+        "text": "non-breaking space"
+      },
+      "text": "non-breaking space"
+    },
+    {
+      "anchor": "Final whitespace bookmark anchor.",
+      "id": 4,
+      "kind": "bookmark",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 329,
+        "start_byte": 296,
+        "text": "Final whitespace bookmark anchor."
+      }
+    }
+  ],
+  "schema": 1
+}

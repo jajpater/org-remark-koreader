@@ -1,0 +1,39 @@
+{
+  "fixture": "014-lua-string-escapes",
+  "format": "md",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 67,
+        "start_byte": 40,
+        "text": "\"quoted\" text with a \\ path"
+      },
+      "text": "\"quoted\" text with a \\ path"
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "annotation",
+      "note": "First physical line with \"quotes\" and a \\ path.\nSecond physical line has a tab:\there, a carriage return:\rhere, byte one:\u0001, and 日本語.",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 149,
+        "start_byte": 106,
+        "text": "Unicode café 🧠 with serializer controls"
+      },
+      "text": "Unicode café 🧠 with serializer controls"
+    }
+  ],
+  "schema": 1,
+  "sidecar_contains": [
+    "\\\"quoted\\\"",
+    "\\\\ path",
+    "\\9",
+    "\\13",
+    "\\1"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "fixture": "002-unicode-duplicates",
+  "format": "epub",
+  "operations": [
+    {
+      "color": "cyan",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "Café naïve Straße Ελληνικά 日本語 العربية 😀 remain intact"
+    },
+    {
+      "color": "orange",
+      "expected_matches": 3,
+      "id": 2,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "The repeated EPUB sentence appears here"
+    },
+    {
+      "color": "purple",
+      "expected_matches": 3,
+      "id": 3,
+      "kind": "highlight",
+      "occurrence": 3,
+      "text": "The repeated EPUB sentence appears here"
+    },
+    {
+      "color": "blue",
+      "id": 4,
+      "kind": "annotation",
+      "note": "Unicode note: café, Ω, 日本語, 😀.",
+      "occurrence": 1,
+      "text": "An emoji annotation target 😀 is unique"
+    },
+    {
+      "anchor": "Unicode bookmark anchor Ω ends the fixture.",
+      "id": 5,
+      "kind": "bookmark",
+      "occurrence": 1
+    }
+  ],
+  "schema": 1
+}

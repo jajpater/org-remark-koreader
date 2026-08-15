@@ -1,0 +1,19 @@
+Whitespace fixture
+
+Multiple   spaces stay visible.
+
+A	literal tab separates words.
+
+    four space code
+    second code line
+
+	tab indented code
+	tab indented continuation
+
+This contains a non-breaking space in the phrase.
+
+
+
+Several blank lines appear before this sentence.
+
+Final whitespace bookmark anchor.

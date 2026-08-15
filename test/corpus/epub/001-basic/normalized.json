@@ -1,0 +1,68 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 1,
+    "highlight": 1
+  },
+  "fixture": "001-basic",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/p[1]/text().26",
+      "pos1": "/body/DocFragment/body/p[1]/text().56",
+      "rendered_text": "unique EPUB highlighted phrase",
+      "same_text_node": true,
+      "source_document": null,
+      "source_range": null,
+      "text": "unique EPUB highlighted phrase"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "annotation",
+      "match_strategy": "composed",
+      "note": "EPUB cross-node note survives reload.",
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/p[2]/text()[1].4",
+      "pos1": "/body/DocFragment/body/p[2]/text()[2].14",
+      "rendered_text": "EPUB passage crosses bold words and continues",
+      "same_text_node": false,
+      "source_document": null,
+      "source_range": null,
+      "text": "EPUB passage crosses bold words and continues"
+    },
+    {
+      "anchor": "The basic EPUB bookmark anchor is on its own page.",
+      "anchor_page": 2,
+      "bookmark_page": "/body/DocFragment/body/p[3]/text().0",
+      "color": null,
+      "exact_match_count": 1,
+      "has_page": true,
+      "id": 3,
+      "kind": "bookmark",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "pos0": "/body/DocFragment/body/p[3]/text().0",
+      "pos1": "/body/DocFragment/body/p[3]/text().50",
+      "rendered_text": null,
+      "same_text_node": true,
+      "source_document": null,
+      "source_range": null,
+      "text": null
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

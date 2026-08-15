@@ -1,0 +1,70 @@
+{
+  "fixture": "004-colors",
+  "format": "epub",
+  "operations": [
+    {
+      "color": "red",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "EPUB red swatch"
+    },
+    {
+      "color": "orange",
+      "id": 2,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "EPUB orange swatch"
+    },
+    {
+      "color": "yellow",
+      "id": 3,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "EPUB yellow swatch"
+    },
+    {
+      "color": "green",
+      "id": 4,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "EPUB green swatch"
+    },
+    {
+      "color": "olive",
+      "id": 5,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "EPUB olive swatch"
+    },
+    {
+      "color": "cyan",
+      "id": 6,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "EPUB cyan swatch"
+    },
+    {
+      "color": "blue",
+      "id": 7,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "EPUB blue swatch"
+    },
+    {
+      "color": "purple",
+      "id": 8,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "EPUB purple swatch"
+    },
+    {
+      "color": "gray",
+      "id": 9,
+      "kind": "highlight",
+      "occurrence": 1,
+      "text": "EPUB gray swatch"
+    }
+  ],
+  "schema": 1
+}

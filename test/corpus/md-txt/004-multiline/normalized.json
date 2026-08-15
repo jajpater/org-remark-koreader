@@ -1,0 +1,40 @@
+{
+  "counts": {
+    "annotation": 1,
+    "bookmark": 0,
+    "highlight": 1
+  },
+  "fixture": "004-multiline",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "soft-wrapped logical paragraph begins here and continues across a Markdown source line",
+      "same_text_node": true,
+      "text": "soft-wrapped logical paragraph begins here and continues across a Markdown source line"
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 1,
+      "has_page": null,
+      "id": 2,
+      "kind": "annotation",
+      "match_strategy": "whole",
+      "note": "Rendered selection contains a physical newline.",
+      "occurrence": 1,
+      "rendered_text": "alpha code line\nbeta code line",
+      "same_text_node": true,
+      "text": "alpha code line\nbeta code line"
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

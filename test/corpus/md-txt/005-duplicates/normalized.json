@@ -1,0 +1,54 @@
+{
+  "counts": {
+    "annotation": 0,
+    "bookmark": 0,
+    "highlight": 3
+  },
+  "fixture": "005-duplicates",
+  "operations": [
+    {
+      "anchor": null,
+      "color": "yellow",
+      "exact_match_count": 3,
+      "has_page": null,
+      "id": 1,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 1,
+      "rendered_text": "Repeated sentence for deterministic occurrence.",
+      "same_text_node": true,
+      "text": "Repeated sentence for deterministic occurrence."
+    },
+    {
+      "anchor": null,
+      "color": "green",
+      "exact_match_count": 3,
+      "has_page": null,
+      "id": 2,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 2,
+      "rendered_text": "Repeated sentence for deterministic occurrence.",
+      "same_text_node": true,
+      "text": "Repeated sentence for deterministic occurrence."
+    },
+    {
+      "anchor": null,
+      "color": "purple",
+      "exact_match_count": 3,
+      "has_page": null,
+      "id": 3,
+      "kind": "highlight",
+      "match_strategy": "whole",
+      "note": null,
+      "occurrence": 3,
+      "rendered_text": "Repeated sentence for deterministic occurrence.",
+      "same_text_node": true,
+      "text": "Repeated sentence for deterministic occurrence."
+    }
+  ],
+  "schema": 1,
+  "validation": "pass"
+}

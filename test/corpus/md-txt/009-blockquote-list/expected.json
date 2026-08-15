@@ -1,0 +1,55 @@
+{
+  "fixture": "009-blockquote-list",
+  "format": "md",
+  "operations": [
+    {
+      "color": "yellow",
+      "id": 1,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 41,
+        "start_byte": 27,
+        "text": "quoted passage"
+      },
+      "text": "quoted passage"
+    },
+    {
+      "color": "green",
+      "id": 2,
+      "kind": "annotation",
+      "note": "Crosses quoted source lines.",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 95,
+        "start_byte": 25,
+        "text": "A quoted passage appears here.\n> It continues on a second quoted line."
+      },
+      "text": "A quoted passage appears here. It continues on a second quoted line."
+    },
+    {
+      "color": "purple",
+      "id": 3,
+      "kind": "highlight",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 133,
+        "start_byte": 112,
+        "text": "second important item"
+      },
+      "text": "second important item"
+    },
+    {
+      "anchor": "third item",
+      "id": 4,
+      "kind": "bookmark",
+      "occurrence": 1,
+      "source_range": {
+        "end_byte": 146,
+        "start_byte": 136,
+        "text": "third item"
+      }
+    }
+  ],
+  "schema": 1
+}
