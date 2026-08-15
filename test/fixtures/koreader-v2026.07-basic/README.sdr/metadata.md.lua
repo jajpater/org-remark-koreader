@@ -1,4 +1,4 @@
--- /home/jajpater/Develop/mygithub/spacemacs-dev/dev/org-remark-koreader/test/fixtures/koreader-v2026.07-basic/README.sdr/metadata.md.lua
+-- /mnt/onboard/koreader-v2026.07-basic/README.sdr/metadata.md.lua
 return {
     ["annotations"] = {},
     ["config_panel_index"] = 1,
@@ -34,7 +34,7 @@ return {
     ["cre_dom_version"] = 20240114,
     ["css"] = "./data/epub.css",
     ["doc_pages"] = 3,
-    ["doc_path"] = "/home/jajpater/Develop/mygithub/spacemacs-dev/dev/org-remark-koreader/test/fixtures/koreader-v2026.07-basic/README.md",
+    ["doc_path"] = "/mnt/onboard/koreader-v2026.07-basic/README.md",
     ["doc_props"] = {
         ["title"] = "README",
     },

@@ -1,4 +1,4 @@
--- /home/jajpater/Develop/mygithub/spacemacs-dev/dev/org-remark-koreader/test/fixtures/koreader-v2026.07-basic/source.sdr/source.md.annotations.lua
+-- /mnt/onboard/koreader-v2026.07-basic/source.sdr/source.md.annotations.lua
 return {
     ["annotations"] = {
         [1] = {
