@@ -65,9 +65,9 @@
 
 (ert-deftest org-remark-koreader-lua/a-multiline-note-stays-whole ()
   "A backslash followed by a real newline is one newline.
-Dit is de vorm die een lezer met een regelgebonden patroon stil mist."
-  (should (equal (org-remark-koreader-lua-tests--value "\"een\\\ntwee\\\ndrie\"")
-                 "een\ntwee\ndrie")))
+This is the shape a reader with a line-bound pattern misses in silence."
+  (should (equal (org-remark-koreader-lua-tests--value "\"one\\\ntwo\\\nthree\"")
+                 "one\ntwo\nthree")))
 
 (ert-deftest org-remark-koreader-lua/escapes ()
   "The escapes the serializer produces."
@@ -84,7 +84,7 @@ Dit is de vorm die een lezer met een regelgebonden patroon stil mist."
 
 (ert-deftest org-remark-koreader-lua/value-types ()
   "Strings, numbers, booleans, nil and tables."
-  (should (equal (org-remark-koreader-lua-tests--value "\"tekst\"") "tekst"))
+  (should (equal (org-remark-koreader-lua-tests--value "\"text\"") "text"))
   (should (equal (org-remark-koreader-lua-tests--value "42") 42))
   (should (equal (org-remark-koreader-lua-tests--value "-7") -7))
   (should (equal (org-remark-koreader-lua-tests--value "0.23076923076923")

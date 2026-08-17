@@ -10,7 +10,7 @@
 ;;
 ;; Running them (org-remark has to be on the load path):
 ;;
-;;     emacs --batch -Q -L . -L <pad-naar-org-remark> -l ert \
+;;     emacs --batch -Q -L . -L <path-to-org-remark> -l ert \
 ;;           -l test/org-remark-koreader-integration-tests.el \
 ;;           -f ert-run-tests-batch-and-exit 2>&1 | grep -E '^Ran |FAILED'
 
@@ -206,11 +206,11 @@ This is the test the rest of the design rests on."
     (with-current-buffer (org-remark-koreader-integration-tests--visit source)
       (org-remark-koreader-import)
       (org-remark-save)
-      (let ((na-een (length (org-remark-koreader-integration-tests--koreader-overlays))))
+      (let ((after-one (length (org-remark-koreader-integration-tests--koreader-overlays))))
         (org-remark-koreader-import)
         (org-remark-save)
         (should (= (length (org-remark-koreader-integration-tests--koreader-overlays))
-                   na-een))
+                   after-one))
         ;; Nothing may have been added in the Org file either.
         (with-current-buffer (find-file-noselect
                               (org-remark-koreader-integration-tests--notes-file source))
@@ -267,7 +267,7 @@ differs."
     (should (equal (org-remark-koreader-tuple-readable tuple)
                    (concat "book.md | highlight | /html/body/p/text().1"
                            " | /html/body/p/text().9 | 2026-08-14 12:00:00")))
-    ;; De weergave gaat door de property-filter heen zonder te veranderen.
+    ;; The rendering passes through the property filter unchanged.
     (should (equal (org-remark-koreader--property-value
                     (org-remark-koreader-tuple-readable tuple))
                    (org-remark-koreader-tuple-readable tuple)))))
@@ -282,7 +282,7 @@ after it lose its link."
   (should-not (org-remark-koreader--note-breaks-structure-p "some *emphasis* here"))
   (should-not (org-remark-koreader--note-breaks-structure-p "3 * 4 = 12")))
 
-;;;; Behoud van lokale bewerkingen
+;;;; Keeping local edits
 
 (ert-deftest org-remark-koreader-integration/a-local-edit-is-kept ()
   "A note the user has edited is not overwritten.
@@ -340,14 +340,14 @@ Mimics what KOReader does when you erase a mark."
         (insert-file-contents sidecar))
       (goto-char (point-min))
       (should (search-forward (format "\"%s\"" text) nil :noerror))
-      ;; Terug naar het begin van het blok en het hele blok weghalen.
+      ;; Back to the start of the block and remove the whole block.
       (should (re-search-backward "^        \\[[0-9]+\\] = {" nil :noerror))
       (let ((beg (match-beginning 0)))
         (should (re-search-forward "^        },\n" nil :noerror))
         (delete-region beg (point)))
-      ;; De overgebleven blokken hernummeren.  KOReader schrijft een
-      ;; aaneengesloten lijst, en de lezer weigert terecht een gat: dat zou
-      ;; betekenen dat er een annotatie ontbreekt.
+      ;; Renumber the blocks that are left.  KOReader writes a contiguous
+      ;; list, and the reader rightly refuses a gap: that would mean an
+      ;; annotation is missing.
       (goto-char (point-min))
       (let ((index 0))
         (while (re-search-forward "^        \\[\\([0-9]+\\)\\] = {" nil :noerror)
@@ -421,18 +421,18 @@ without anyone noticing."
 Either way the local text is kept, but only the second case is a
 conflict the user has to see."
   (skip-unless org-remark-koreader-integration-tests--available)
-  (let* ((baseline (org-remark-koreader--note-baseline-hash "origineel")))
-    ;; Alleen lokaal: KOReader stuurt nog steeds de oorspronkelijke tekst.
+  (let* ((baseline (org-remark-koreader--note-baseline-hash "original")))
+    ;; Local only: KOReader still sends the original text.
     (should (eq (org-remark-koreader--note-action
-                 baseline "lokaal bewerkt" "origineel")
+                 baseline "edited locally" "original")
                 'keep-local))
-    ;; Beide kanten: KOReader stuurt iets nieuws én lokaal is bewerkt.
+    ;; Both sides: KOReader sends something new and there is a local edit.
     (should (eq (org-remark-koreader--note-action
-                 baseline "lokaal bewerkt" "nieuw uit KOReader")
+                 baseline "edited locally" "new from KOReader")
                 'conflict))
-    ;; Alleen KOReader: lokaal onaangeroerd, dus verversen mag.
+    ;; KOReader only: untouched locally, so refreshing is allowed.
     (should (eq (org-remark-koreader--note-action
-                 baseline "origineel" "nieuw uit KOReader")
+                 baseline "original" "new from KOReader")
                 'write))))
 
 (ert-deftest org-remark-koreader-integration/your-own-highlights-do-not-count ()
@@ -443,7 +443,7 @@ report as something gone from KOReader."
     (with-current-buffer (org-remark-koreader-integration-tests--visit source)
       (org-remark-koreader-import)
       (org-remark-save)
-      ;; Een eigen markering, buiten KOReader om.
+      ;; A mark of one's own, outside KOReader.
       (org-remark-mark (point-min) (+ (point-min) 8))
       (org-remark-save)
       (org-remark-koreader-import)
@@ -451,22 +451,22 @@ report as something gone from KOReader."
                       (buffer-string))))
         (should-not (string-match-p "Gone from KOReader" report))))))
 
-;;;; De vier toestanden los
+;;;; The four states on their own
 
 (ert-deftest org-remark-koreader-integration/four-states ()
   "The decision to write depends on the baseline, not on emptiness."
   (skip-unless org-remark-koreader-integration-tests--available)
-  (let* ((note "de notitie")
+  (let* ((note "the note")
          (hash (org-remark-koreader--note-baseline-hash note)))
     (should (eq (org-remark-koreader--note-action nil "" note) 'write))
-    (should (eq (org-remark-koreader--note-action nil "iets anders" note)
+    (should (eq (org-remark-koreader--note-action nil "something else" note)
                 'keep-existing))
     (should (eq (org-remark-koreader--note-action hash note note) 'unchanged))
-    (should (eq (org-remark-koreader--note-action hash note "nieuwe tekst")
+    (should (eq (org-remark-koreader--note-action hash note "new text")
                 'write))
-    (should (eq (org-remark-koreader--note-action hash "aangepast" note)
+    (should (eq (org-remark-koreader--note-action hash "changed" note)
                 'keep-local))
-    ;; Een lege body mét baseline is een verwijdering, geen ontbrekende import.
+    ;; An empty body with a baseline is a deletion, not a missing import.
     (should (eq (org-remark-koreader--note-action hash "" note) 'keep-local))))
 
 ;;;; Bookmarks

@@ -277,7 +277,7 @@ says where that text is.  Alike predecessors are skipped, so that
         (when found (cons (match-beginning 0) (match-end 0)))))))
 
 (defconst org-remark-koreader-epub--breakable-rx
-  (concat "[" "　-〿"      ; CJK-leestekens
+  (concat "[" "　-〿"      ; CJK punctuation
           "぀-ゟ"          ; hiragana
           "゠-ヿ"          ; katakana
           "一-鿿"          ; Han
@@ -406,7 +406,7 @@ hits."
               (org-remark-koreader-match--place mark (car remaining)
                                                 'disambiguated)
             (org-remark-koreader-match--note-anomaly
-             mark "%d kandidaten na vernauwing van %d"
+             mark "%d candidates left after narrowing from %d"
              (length remaining)
              (length (org-remark-koreader-mark-candidates mark))))))))
   ;; Round 3 — the selection crossed a block boundary; find the parts apart.

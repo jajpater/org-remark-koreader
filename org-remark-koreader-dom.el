@@ -79,7 +79,7 @@ The distinction matters when joining text across several nodes: inside
 one block the text runs on seamlessly, across a block boundary a
 newline appears between them.")
 
-;;;; Witruimte
+;;;; Whitespace
 
 (defconst org-remark-koreader-dom--space-chars '(?\s ?\t ?\n ?\r ?\f)
   "Characters the renderer counts as whitespace.")

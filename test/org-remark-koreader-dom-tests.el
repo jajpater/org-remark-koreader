@@ -58,7 +58,7 @@ would be found."
 (ert-deftest org-remark-koreader-dom/lists-are-numbered ()
   "Lists are numbered across the whole document."
   (org-remark-koreader-dom-tests--with
-      "* een\n* twee\n\nTussentekst.\n\n* drie\n"
+      "* one\n* two\n\nIn-between text.\n\n* three\n"
     (should (member "/html/body/ul[1]/li[1]/text()"
                     (org-remark-koreader-dom-paths dom)))
     (should (member "/html/body/ul[1]/li[2]/text()"
@@ -81,7 +81,7 @@ path is found."
 
 (ert-deftest org-remark-koreader-dom/inline-splits-text-nodes ()
   "Markup inside a paragraph yields numbered text nodes."
-  (org-remark-koreader-dom-tests--with "voor **vet** na\n"
+  (org-remark-koreader-dom-tests--with "before **bold** after\n"
     (should (member "/html/body/p/text()[1]" (org-remark-koreader-dom-paths dom)))
     (should (member "/html/body/p/strong/text()"
                     (org-remark-koreader-dom-paths dom)))
@@ -90,14 +90,14 @@ path is found."
 
 (ert-deftest org-remark-koreader-dom/emphasis-and-strong-differ ()
   "One asterisk is emphasis, two is strong."
-  (org-remark-koreader-dom-tests--with "een *nadruk* en **sterk** hier\n"
+  (org-remark-koreader-dom-tests--with "one *emphasis* and **strong** here\n"
     (should (member "/html/body/p/em/text()" (org-remark-koreader-dom-paths dom)))
     (should (member "/html/body/p/strong/text()"
                     (org-remark-koreader-dom-paths dom)))))
 
 (ert-deftest org-remark-koreader-dom/several-emphases-are-numbered ()
   "Two emphases in the same paragraph get em[1] and em[2]."
-  (org-remark-koreader-dom-tests--with "*een* tussen *twee*\n"
+  (org-remark-koreader-dom-tests--with "*one* between *two*\n"
     (should (member "/html/body/p/em[1]/text()"
                     (org-remark-koreader-dom-paths dom)))
     (should (member "/html/body/p/em[2]/text()"
@@ -105,10 +105,10 @@ path is found."
 
 (ert-deftest org-remark-koreader-dom/a-link-yields-an-a ()
   "The text of a link sits under `a'; the address does not count."
-  (org-remark-koreader-dom-tests--with "Lees [de passage](https://x) goed\n"
+  (org-remark-koreader-dom-tests--with "Read [the passage](https://x) well\n"
     (should (member "/html/body/p/a/text()" (org-remark-koreader-dom-paths dom)))
     (should (equal (org-remark-koreader-dom-tests--at dom "/html/body/p/a/text()" 0)
-                   "d"))))
+                   "t"))))
 
 ;;;; Whitespace
 
@@ -124,26 +124,26 @@ character."
                          (org-remark-koreader-dom-nodes dom))))
       (should (equal (org-remark-koreader-dom-node-text node) "aaa bbb"))))
   ;; A newline inside a paragraph counts as one space.
-  (org-remark-koreader-dom-tests--with "regel een\nregel twee\n"
+  (org-remark-koreader-dom-tests--with "line one\nline two\n"
     (let ((node (gethash "/html/body/p/text()"
                          (org-remark-koreader-dom-nodes dom))))
       (should (equal (org-remark-koreader-dom-node-text node)
-                     "regel een regel twee"))))
-  ;; Een spatie vóór het regeleinde is samen met dat regeleinde één spatie.
-  ;; Dit is het gemeten geval waarin bron en gerenderde tekst uiteenlopen.
-  (org-remark-koreader-dom-tests--with "regel een \nregel twee\n"
+                     "line one line two"))))
+  ;; A space before the newline is, with that newline, a single space.
+  ;; This is the measured case in which source and rendered text diverge.
+  (org-remark-koreader-dom-tests--with "line one \nline two\n"
     (let ((node (gethash "/html/body/p/text()"
                          (org-remark-koreader-dom-nodes dom))))
       (should (equal (org-remark-koreader-dom-node-text node)
-                     "regel een regel twee")))))
+                     "line one line two")))))
 
 (ert-deftest org-remark-koreader-dom/offset-points-at-the-right-source-position ()
   "After collapsed whitespace the mapping to the source still holds."
   (org-remark-koreader-dom-tests--with "aaa   bbb\n"
-    ;; Gerenderd "aaa bbb": index 4 is de `b'.
+    ;; Rendered "aaa bbb": index 4 is the `b'.
     (should (equal (org-remark-koreader-dom-tests--at dom "/html/body/p/text()" 4)
                    "b"))
-    ;; Index 3 is de spatie; die beeldt af op het eerste witruimteteken.
+    ;; Index 3 is the space; it maps onto the first whitespace character.
     (should (equal (org-remark-koreader-dom-tests--at dom "/html/body/p/text()" 3)
                    " "))))
 
@@ -151,27 +151,27 @@ character."
 
 (ert-deftest org-remark-koreader-dom/range-within-a-block-runs-on ()
   "Text running across inline markup is joined seamlessly."
-  (org-remark-koreader-dom-tests--with "voor **vet** na\n"
+  (org-remark-koreader-dom-tests--with "before **bold** after\n"
     (should (equal (org-remark-koreader-dom-range-text
-                    dom "/html/body/p/text()[1]" 0 "/html/body/p/text()[2]" 3)
-                   "voor vet na"))))
+                    dom "/html/body/p/text()[1]" 0 "/html/body/p/text()[2]" 6)
+                   "before bold after"))))
 
 (ert-deftest org-remark-koreader-dom/range-across-a-block-gets-a-newline ()
   "Across a block boundary comes a newline, and the whitespace before it goes."
-  (org-remark-koreader-dom-tests--with "* een \n* twee\n"
+  (org-remark-koreader-dom-tests--with "* one \n* two\n"
     (should (equal (org-remark-koreader-dom-range-text
                     dom "/html/body/ul/li[1]/text()" 0
-                    "/html/body/ul/li[2]/text()" 4)
-                   "een\ntwee"))))
+                    "/html/body/ul/li[2]/text()" 3)
+                   "one\ntwo"))))
 
 (ert-deftest org-remark-koreader-dom/range-yields-source-positions ()
   "A range yields a start and end position in the source."
-  (org-remark-koreader-dom-tests--with "voor **vet** na\n"
+  (org-remark-koreader-dom-tests--with "before **bold** after\n"
     (let ((range (org-remark-koreader-dom-resolve-range
-                  dom "/html/body/p/text()[1]" 0 "/html/body/p/text()[2]" 3)))
+                  dom "/html/body/p/text()[1]" 0 "/html/body/p/text()[2]" 6)))
       (should range)
       (should (equal (buffer-substring-no-properties (car range) (cdr range))
-                     "voor **vet** na")))))
+                     "before **bold** after")))))
 
 ;;;; What is not there is not guessed at
 

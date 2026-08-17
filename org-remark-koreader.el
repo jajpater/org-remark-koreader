@@ -228,7 +228,7 @@ colour name is kept either way."
 
 (cl-defmethod org-remark-highlight-make-overlay
   (beg end face (_org-remark-type (eql 'koreader-annotation)))
-  "Maak een tekstbereik-overlay van BEG tot END met FACE."
+  "Make a text-range overlay from BEG to END with FACE."
   (org-remark-koreader--make-overlay beg end face))
 
 (cl-defmethod org-remark-highlight-make-overlay
@@ -257,7 +257,7 @@ Newlines become spaces: an Org headline is one line."
 
 (cl-defmethod org-remark-highlight-headline-text
   (ov (_org-remark-type (eql 'koreader-annotation)))
-  "Geef de gemarkeerde tekst van OV als headlinetekst."
+  "Return the marked text of OV as headline text."
   (org-remark-koreader--headline-text ov))
 
 (cl-defmethod org-remark-highlight-headline-text
@@ -1049,7 +1049,7 @@ The notes file leads here and is not touched: what sits there comes
 back, and only then is the sidecar laid alongside again."
   (interactive)
   (unless (buffer-file-name)
-    (user-error "Deze buffer hoort niet bij een bestand"))
+    (user-error "This buffer does not belong to a file"))
   (org-remark-highlights-clear)
   (org-remark-highlights-load)
   (org-remark-koreader-import))
