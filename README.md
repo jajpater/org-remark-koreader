@@ -266,6 +266,9 @@ towards everything that follows from the sidecar alone.
   the sidecar format actually is, measured
 - [`docs/org-remark-current-api.md`](docs/org-remark-current-api.md) — the
   org-remark API, life cycle and hook points
+- [`docs/epub-and-nov.md`](docs/epub-and-nov.md) — the other end of the EPUB
+  route: what `nov-mode` makes of a book, and how a KOReader XPointer finds its
+  way in that
 
 ## Licence
 

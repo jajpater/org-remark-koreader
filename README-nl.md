@@ -269,6 +269,9 @@ archief, tellen nog steeds mee voor alles wat alleen uit de sidecar volgt.
   het sidecarformaat feitelijk is, gemeten
 - [`docs/org-remark-current-api.md`](docs/org-remark-current-api.md) — de
   org-remark-API, levenscyclus en inhaakpunten
+- [`docs/epub-and-nov.md`](docs/epub-and-nov.md) — de andere kant van de
+  EPUB-route: wat `nov-mode` van een boek maakt, en hoe een KOReader-XPointer
+  daarin zijn weg vindt
 
 ## Licentie
 
