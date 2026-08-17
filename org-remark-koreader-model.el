@@ -96,9 +96,15 @@ beginning."
 (defun org-remark-koreader-same-node-p (mark)
   "Return non-nil when both XPointers of MARK lie in the same text node.
 
-This is the cheap prediction: if the answer is yes, the stored text
-appears verbatim in the source; if it is no, it never does.  It costs
-two string comparisons and needs no reconstruction of the DOM."
+This is the cheap prediction, and it holds in one direction only: if
+the answer is no, the stored text never appears in the source word for
+word, so searching for it is pointless.  If the answer is yes, it
+usually does -- but not always, because a single text node can hold a
+source line break or a run of spaces that the rendering collapsed.
+Hence searching remains a search whose result is checked, and not an
+outcome that follows from this answer.
+
+It costs two string comparisons and needs no reconstruction of the DOM."
   (let ((pos0 (org-remark-koreader-parse-xpointer
                (org-remark-koreader-mark-pos0 mark)))
         (pos1 (org-remark-koreader-parse-xpointer

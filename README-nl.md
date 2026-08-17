@@ -227,11 +227,14 @@ beschrijft, dat een bookmark van nul lengte de opruiming van org-remark
 overleeft, en dat import, opslaan, sluiten en heropenen mark én notitie
 behouden zonder duplicaten.
 
-Daarnaast draait `test/analyse-fixtures.el` de echte bronpositiebepaling op de
-gegenereerde corpus en legt elke uitkomst naast de bytegrenzen die de generator
-uit zijn eigen scenariomarkeringen afleidt. Dat is de enige toets die kan zien
-dat een mark op de *verkeerde* plek staat in plaats van alleen dat hij ergens
-staat. Uitkomst:
+De toets op de verkeerde tekst weegt het zwaarst. Die draait de echte
+bronpositiebepaling op de gegenereerde corpus en legt elke uitkomst naast de
+bytegrenzen die de generator uit zijn eigen scenariomarkeringen afleidt —
+onafhankelijk van wat dit pakket doet. Dat is de enige toets die kan zien dat
+een mark op de *verkeerde* plek staat in plaats van alleen dat hij ergens staat.
+De suite houdt hem vast in `test/org-remark-koreader-corpus-tests.el`, en
+`test/analyse-fixtures.el` drukt dezelfde meting per fixture af, met de details
+van elke afwijking. Uitkomst:
 
 ```text
 Markdown en platte tekst   47 van de 47 tekstbereiken, 9 van de 9 bookmarks

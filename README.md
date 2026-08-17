@@ -224,11 +224,14 @@ that a bookmark of zero length survives org-remark's housekeeping, and that
 import, saving, closing and reopening preserve both mark and note without
 duplicates.
 
-Besides that, `test/analyse-fixtures.el` runs the real source position finding
-on the generated corpus and lays every outcome beside the byte bounds the
-generator derives from its own scenario markers. That is the only check that can
-see a mark sitting in the *wrong* place instead of only that it sits somewhere.
-Outcome:
+The check for the wrong text is the one that carries the most weight. It runs
+the real source position finding on the generated corpus and lays every outcome
+beside the byte bounds the generator derives from its own scenario markers —
+independent of anything this package does. That is the only check that can see a
+mark sitting in the *wrong* place instead of only that it sits somewhere. The
+suite holds it as a test in `test/org-remark-koreader-corpus-tests.el`, and
+`test/analyse-fixtures.el` prints the same measurement per fixture with the
+details of every deviation. Outcome:
 
 ```text
 Markdown and plain text    47 of the 47 text ranges, 9 of the 9 bookmarks
