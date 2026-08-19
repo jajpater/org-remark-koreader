@@ -188,6 +188,47 @@ other executable Lua constructs.
 `nil` does not occur: absent values are left out rather than set to nil
 explicitly.
 
+## Writing it back
+
+Reading the format is one thing; giving it back unchanged is another, and it is
+the harder requirement. Most of a sidecar is reader state — font size, margins,
+reading position — plus keys no version of this package has seen. A rewrite may
+disturb none of it, so the yardstick is not "valid Lua" but "the same bytes".
+
+The serializer's rules, read off the files it produces:
+
+| | |
+|---|---|
+| indentation | four spaces per level |
+| entries | `["key"] = value,`, always with the trailing comma |
+| list keys | `[1]`, in brackets and without quotes |
+| empty table | `{}`, on the line of its key |
+| strings | Lua's `%q`: `\"` and `\\`; a newline as a backslash followed by a real newline; other control characters as unpadded decimal escapes such as `\9` and `\13` |
+| preamble | one comment line naming the file's own path |
+
+Every sidecar in this repository — the twenty-two generated ones over both
+document families, plus the two a real KOReader wrote — survives reading and
+writing back character for character. The test is
+`nothing-changes-in-a-round-trip`.
+
+Two things that test does not settle.
+
+**Key order.** The writer reproduces the order it read. Every sidecar here is
+already in sorted key order, so the round trip cannot tell "preserve" from
+"sort" apart: replacing one rule with the other changes not a byte in any of
+the twenty-four files. Only a list of ten or more entries separates them, since
+sorting keys as text puts `[10]` before `[2]`; that case has a test of its own
+rather than a fixture.
+
+**A newline written as `\10`.** It would read back as the same character and be
+written out as a line continuation, so the file would change while its meaning
+did not. No file in the corpus contains it, and no KOReader version is known to
+produce it.
+
+Round-tripping the representation is also not the same as modifying a sidecar
+safely: an unchanged file staying unchanged says nothing yet about what happens
+when an annotation is added, moved or removed.
+
 ## Top-level keys
 
 The corpus counts ~57 top-level keys. Only a handful of them touch annotations;

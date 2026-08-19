@@ -186,11 +186,16 @@ fields and string length rule out memory exhaustion.
 ```text
 org-remark-koreader.el          commands, pens, org-remark adapter
 org-remark-koreader-lua.el      restricted Lua reader
+org-remark-koreader-lua-write.el  the same format written back, byte for byte
 org-remark-koreader-model.el    normalised annotation model, identity
 org-remark-koreader-match.el    source position finding, the ladder
 org-remark-koreader-dom.el      the source rebuilt as a CRengine tree
 org-remark-koreader-epub.el     the EPUB family, by way of nov.el
 ```
+
+Nothing loads `-lua-write.el`: it produces text and touches no file. It is
+there because giving a sidecar back unchanged had to be proven before anything
+may ever write one.
 
 The reader knows nothing of Markdown, the model nothing of org-remark, and
 `-match.el` nothing of EPUB: that family registers itself in a registry. That
@@ -269,6 +274,9 @@ towards everything that follows from the sidecar alone.
 - [`docs/epub-and-nov.md`](docs/epub-and-nov.md) — the other end of the EPUB
   route: what `nov-mode` makes of a book, and how a KOReader XPointer finds its
   way in that
+- [`docs/notes-storage.md`](docs/notes-storage.md) — where org-remark keeps
+  its annotations, what constrains moving them, and a running experiment that
+  serves them straight out of the sidecar
 
 ## Licence
 

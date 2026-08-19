@@ -189,11 +189,16 @@ geheugenuitputting uit.
 ```text
 org-remark-koreader.el          commando's, pennen, org-remark-adapter
 org-remark-koreader-lua.el      beperkte Lua-lezer
+org-remark-koreader-lua-write.el  hetzelfde formaat terug, byte voor byte
 org-remark-koreader-model.el    genormaliseerd annotatiemodel, identiteit
 org-remark-koreader-match.el    bronpositiebepaling, de ladder
 org-remark-koreader-dom.el      de bron nagebouwd als CRengine-boom
 org-remark-koreader-epub.el     de EPUB-familie, via nov.el
 ```
+
+Niets laadt `-lua-write.el`: het levert tekst en raakt geen bestand aan. Het
+bestaat omdat eerst bewezen moest zijn dat een sidecar ongewijzigd terug kan
+komen, voordat er ooit een geschreven mag worden.
 
 De lezer weet niets van Markdown, het model niets van org-remark, en
 `-match.el` niets van EPUB: die familie meldt zich aan in een register. Zo
@@ -272,6 +277,9 @@ archief, tellen nog steeds mee voor alles wat alleen uit de sidecar volgt.
 - [`docs/epub-and-nov.md`](docs/epub-and-nov.md) — de andere kant van de
   EPUB-route: wat `nov-mode` van een boek maakt, en hoe een KOReader-XPointer
   daarin zijn weg vindt
+- [`docs/notes-storage.md`](docs/notes-storage.md) — waar org-remark de
+  annotaties bewaart, wat het verplaatsen daarvan vastlegt, en een draaiend
+  experiment dat ze rechtstreeks uit de sidecar serveert
 
 ## Licentie
 
